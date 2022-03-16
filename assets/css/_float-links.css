@@ -1,0 +1,73 @@
+.float-links {
+  position: fixed;
+  right: 1rem;
+  bottom: 1.5rem;
+  z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .float-links {
+    right: 2rem;
+    bottom: 2rem;
+  }
+}
+
+.float-links ul {
+  list-style: none;
+
+  display: inline-flex;
+}
+
+.float-links li {
+  margin: 1.2rem .6rem;
+}
+
+.float-links a {
+  height: 3.15rem;
+  width: 3.15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f0f0f0;
+
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .float-links a {
+    height: 2.775rem;
+    width: 2.775rem;
+  }
+}
+
+.float-links img {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .float-links img {
+    max-width: 1.7rem;
+    max-height: 1.7rem;
+  }
+}
+
+.float-links a.rocketseat {
+  background-color: rgb(130, 87, 230);
+  box-shadow: 0 0 0 .4rem rgba(130, 87, 230, .5);
+}
+
+.float-links a.rocketseat:hover {
+  box-shadow: 0 0 0 .6rem rgba(130, 87, 230, .6);
+}
+
+.float-links a.github {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 0 .4rem rgba(0, 0, 0, .5);
+}
+
+.float-links a.github:hover {
+  box-shadow: 0 0 0 .6rem rgba(0, 0, 0, .6);
+}

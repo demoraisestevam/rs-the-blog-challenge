@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-purple);
+  color: #000;
+}
+
+a {
+  color: var(--button-bg);
+  text-decoration: none;
+  transition: ease-in-out 200ms;
+}
+
+a:hover {
+  color: var(--button-bg-hover);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 1120px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
