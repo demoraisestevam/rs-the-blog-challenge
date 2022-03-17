@@ -94,8 +94,8 @@
     transition: ease-in-out 350ms;
   }
 
-  .header__nav[data-active],
-  .header__search-form[data-active] {
+  .header__nav.active,
+  .header__search-form.active {
     top: 0;
   }
    
@@ -127,6 +127,6 @@
 
   .header__search-form input {
     width: 100%;
-    background-color: var(--purple-bg);
+    background-color: var(--purple-bg) !important;
   }
 }

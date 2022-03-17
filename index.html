@@ -11,49 +11,49 @@
 </head>
 <body>
 
-  <main> 
+  <header class="header">
+    <div class="header__content container">
 
-    <header class="header">
-      <div class="header__content container">
+      <button class="header__toggle header__toggle--menu" rel="js-toggle" data-target="js-menu">Abrir/Fechar Menu</button>
 
-        <button class="header__toggle header__toggle--menu" rel="js-toggle" data-target="js-menu">Abrir/Fechar Menu</button>
+      <a class="header__brand-link" href="/">
+        <img src="assets/images/logo.svg" alt="The Blog. Brand">
+      </a>
 
-        <a class="header__brand-link" href="/">
-          <img src="assets/images/logo.svg" alt="The Blog. Brand">
-        </a>
+      <button class="header__toggle header__toggle--search" rel="js-toggle" data-target="js-search">Abrir/Fechar Busca</button>
 
-        <button class="header__toggle header__toggle--search" rel="js-toggle" data-target="js-search">Abrir/Fechar Busca</button>
-  
-        <!-- data-active -->
-        <nav class="header__nav" rel="js-menu">
-          <ul>
-            <li class="current">
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#">Sobre</a>
-            </li>
-            <li>
-              <a href="#">Categorias</a>
-            </li>
-            <li>
-              <a href="#">Contato</a>
-            </li>
-          </ul>
-        </nav>
-  
-        <!-- data-active -->
-        <div class="header__search-form" rel="js-search">
-          <form class="search-form">
-            <input type="text" name="s" placeholder="Buscar">
-            <button type="submit">
-              <img src="assets/images/search.svg">
-            </button>
-          </form>
-        </div>
+      <!-- data-active -->
+      <nav class="header__nav" rel="js-menu">
+        <ul>
+          <li class="current">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
+          <li>
+            <a href="#">Categorias</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
 
+      <!-- data-active -->
+      <div class="header__search-form" rel="js-search">
+        <form class="search-form">
+          <input type="text" name="s" placeholder="Buscar">
+          <button type="submit">
+            <img src="assets/images/search.svg">
+          </button>
+        </form>
       </div>
-    </header>
+
+    </div>
+  </header>
+
+  <main>
 
     <article class="featured-post">
       <div class="container">
@@ -143,15 +143,15 @@
 
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <img src="assets/images/logo.svg" alt="The Blog. Brand">
-        
-        <p>&copy; The Blog. - Todos os direitos reservados</p>
-      </div>
-    </footer>
-
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="assets/images/logo.svg" alt="The Blog. Brand">
+      
+      <p>&copy; The Blog. - Todos os direitos reservados</p>
+    </div>
+  </footer>
 
   <nav class="float-links">
     <ul>
@@ -167,6 +167,8 @@
       </li>
     </ul>
   </nav>
+
+  <script type="module" src="assets/js/script.js"></script>
 
 </body>
 </html>

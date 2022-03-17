@@ -12,6 +12,7 @@
   padding: .9175rem 1.5rem;
   font-size: .9rem;
   background-color: var(--dark-bg);
+  caret-color: var(--green);
 }
 
 .search-form input,
