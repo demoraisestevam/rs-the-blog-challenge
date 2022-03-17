@@ -1,3 +1,9 @@
 @import '_root.css';
 @import '_base.css';
+@import '_header.css';
+@import '_footer.css';
+@import '_search-form.css';
+@import '_post.css';
+@import '_list-posts.css';
+@import '_featured-post.css';
 @import '_float-links.css';

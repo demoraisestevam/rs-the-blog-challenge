@@ -1,0 +1,35 @@
+.search-form {
+  display: flex;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.search-form * {
+  border: none;
+}
+
+.search-form input {
+  padding: .9175rem 1.5rem;
+  font-size: .9rem;
+  background-color: var(--dark-bg);
+}
+
+.search-form input,
+.search-form input:hover::placeholder {
+  color: #fff;
+}
+
+.search-form input::placeholder {
+  color: var(--light-purple);
+}
+
+.search-form button {
+  padding: 0 1.5rem;
+  background-color: var(--button-bg);
+  cursor: pointer;
+  transition: ease-in-out 200ms;
+}
+
+.search-form button:hover {
+  background-color: var(--button-bg-hover);
+}

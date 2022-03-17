@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--purple-bg);
+  padding: 3rem 0;
+  border-top: 6px solid var(--green);
+  color: var(--light-purple);
+}
+
+.footer .container {
+  display: grid;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

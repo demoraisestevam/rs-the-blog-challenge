@@ -1,0 +1,132 @@
+.header {
+  background-color: var(--purple-bg);
+  padding: 3.25rem 0 1.5rem;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__brand-link {
+  display: inline-flex;
+}
+
+.header__toggle {
+  position: relative;
+  overflow: hidden;
+  height: 2.75rem;
+  width: 2.75rem;
+  color: transparent;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  border: 1px solid var(--button-bg);
+  border-radius: var(--border-radius);
+}
+
+.header__toggle:active {
+  background-color: var(--dark-bg);
+}
+
+.header__toggle--menu {
+  background-image: url('../images/menu.svg');
+}
+
+.header__toggle--search {
+  background-image: url('../images/search.svg');
+}
+
+.header__nav a {
+  color: #fff;
+}
+
+.header__nav li.current a {
+  font-weight: bold;
+}
+
+/* DESKTOP */
+@media (min-width: 998px) {
+  .header {
+    padding: 4.25rem 0 1.5rem;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav li {
+    display: inline;
+    margin: .5rem .75rem;
+  }
+
+  .header__nav a {
+    padding: 0 .25rem;
+    border-left: solid 2px transparent;
+  }
+  
+  .header__nav li.current a {
+    border-color: var(--green);
+  }
+
+  .header__nav li:not(.current):hover a {
+    border-color: var(--button-bg);
+  }
+}
+
+/* MOBILE ONLY */
+@media (max-width: 997px) {
+  .header__nav,
+  .header__search-form {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    z-index: 100;
+
+    width: 100%;
+
+    padding: 1.75rem 1rem;
+    background-color: var(--dark-bg);
+
+    transition: ease-in-out 350ms;
+  }
+
+  .header__nav[data-active],
+  .header__search-form[data-active] {
+    top: 0;
+  }
+   
+  /* MOBILE NAVIGATION */
+  .header__nav a {
+    display: block;
+    padding: .735rem 1rem;
+    border-left: solid 3px transparent;
+  }
+
+  .header__nav li {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+  }
+
+  .header__nav li + li {
+    margin-top: .25rem;
+  }
+
+  .header__nav li.current a {
+    background-color: var(--purple-bg);
+    border-color: var(--green); 
+  }
+
+  /* MOBILE SEARCH FORM */
+  .header__search-form form {
+    width: 100%;
+  }
+
+  .header__search-form input {
+    width: 100%;
+    background-color: var(--purple-bg);
+  }
+}

@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-primary);
   background-color: var(--light-purple);
   color: #000;
+  transition: ease-in-out 350ms;
 }
 
 a {
@@ -26,8 +27,13 @@ ol {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  max-width: 1120px;
+  max-width: 1170px;
   padding: 0 1rem;
   margin: 0 auto;
 }

@@ -7,11 +7,149 @@
   <title>The Blog.</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <main> 
+
+    <header class="header">
+      <div class="header__content container">
+
+        <button class="header__toggle header__toggle--menu" rel="js-toggle" data-target="js-menu">Abrir/Fechar Menu</button>
+
+        <a class="header__brand-link" href="/">
+          <img src="assets/images/logo.svg" alt="The Blog. Brand">
+        </a>
+
+        <button class="header__toggle header__toggle--search" rel="js-toggle" data-target="js-search">Abrir/Fechar Busca</button>
+  
+        <!-- data-active -->
+        <nav class="header__nav" rel="js-menu">
+          <ul>
+            <li class="current">
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <!-- data-active -->
+        <div class="header__search-form" rel="js-search">
+          <form class="search-form">
+            <input type="text" name="s" placeholder="Buscar">
+            <button type="submit">
+              <img src="assets/images/search.svg">
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </header>
+
+    <article class="featured-post">
+      <div class="container">
+        <img src="assets/images/featured-image.png" alt="Imagem mostrando linhas de código JavaScript na tela de um computador.">
+        <div class="featured-post__info">
+          <h1 class="featured-post__title">
+            <a href="#">Veja o guia definitivo para conquistar seus objetivos como DEV em 2022</a>
+          </h1>
+          <p class="featured-post__execerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
+          <a href="#" class="featured-post__link">Veja mais</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="list-posts container">
+
+      <article class="post-item list-posts__featured">
+        <a href="#">
+          <img src="assets/images/post-1.png" alt="Notebook aberto em cima de uma mesa branca.">
+        </a>
+        <h6 class="post-item__date">Janeiro 04, 2022</h6>
+        <h2 class="post-item__title">
+          <a href="#">Começando no ReactJS em 2022</a>
+        </h2>
+        <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
+      </article>
+
+      <ul class="list-posts__without-images">
+        <li>
+          <article class="post-item post-item--featured">
+            <h6 class="post-item__date">Janeiro 04, 2022</h6>
+            <h2 class="post-item__title">
+              <a href="#">Conheça as principais técnicas para conseguir uma vaga internacional em programação</a>
+            </h2>
+            <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </article>
+        </li>
+        <li>
+          <article class="post-item">
+            <h6 class="post-item__date">Janeiro 04, 2022</h6>
+            <h2 class="post-item__title">
+              <a href="#">Veja a evolução do Front-end na prática</a>
+            </h2>
+            <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque.</p>
+          </article>
+        </li>
+      </ul>
+
+      <ul class="list-posts__remaining">
+        <li>
+          <article class="post-item">
+            <a href="#">
+              <img src="assets/images/post-2.png" alt="Jovem programador olhando fixamente para um notebook.">
+            </a>
+            <h6 class="post-item__date">Janeiro 04, 2022</h6>
+            <h2 class="post-item__title">
+              <a href="#">10 dicas para conseguir a vaga desejada</a>
+            </h2>
+            <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </article>
+        </li>
+        <li>
+          <article class="post-item">
+            <a href="#">
+              <img src="assets/images/post-3.png" alt="Tela de um computador exibindo codígos HTML">
+            </a>
+            <h6 class="post-item__date">Janeiro 04, 2022</h6>
+            <h2 class="post-item__title">
+              <a href="#">Deixe seu código mais semântico com essas dicas</a>
+            </h2>
+            <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </article>
+        </li>
+        <li>
+          <article class="post-item">
+            <a href="#">
+              <img src="assets/images/post-4.png" alt="Mão segurando smartfone">
+            </a>
+            <h6 class="post-item__date">Janeiro 04, 2022</h6>
+            <h2 class="post-item__title">
+              <a href="#">Use essas dicas nas suas aplicações mobile</a>
+            </h2>
+            <p class="post-item__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
+          </article>
+        </li>
+      </ul>
+
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="assets/images/logo.svg" alt="The Blog. Brand">
+        
+        <p>&copy; The Blog. - Todos os direitos reservados</p>
+      </div>
+    </footer>
 
   </main>
 

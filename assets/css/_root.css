@@ -3,9 +3,9 @@
   --dark-bg: #170027;
   --button-bg: #9e6dc2;
   --button-bg-hover: #985BC5;
-  --white: #fff;
   --light-purple: #fbf6ff;
   --green: #4fff4b;
-  --font-family: 'Roboto', sans-serif;
-  --border-radius: 8px;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Poppins', var(--font-primary);
+  --border-radius: 4px;
 }
